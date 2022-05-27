@@ -16,7 +16,7 @@ const AddProduct = () => {
             img: event.target.img.value
         }
 
-        fetch('https://dry-forest-86287.herokuapp.com/addproduct', {
+        fetch('https://nameless-reef-39581.herokuapp.com/addproduct', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

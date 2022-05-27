@@ -18,7 +18,7 @@ const ProductDetails = () => {
     useEffect(() => {
 
         // const url = `http://localhost:5000/products/${productId}`;
-        const url = `https://dry-forest-86287.herokuapp.com/products/${productId}`;
+        const url = `https://nameless-reef-39581.herokuapp.com/products/${productId}`;
         fetch(url)
             .then(res => res.json())
             .then(data => {
@@ -54,7 +54,7 @@ const ProductDetails = () => {
             email: usermail,
         };
 
-        const url = `https://dry-forest-86287.herokuapp.com/products/${productId}`;
+        const url = `https://nameless-reef-39581.herokuapp.com/products/${productId}`;
 
         console.log(product.quantity);
         fetch(url, {
@@ -82,7 +82,7 @@ const ProductDetails = () => {
 
         }
         // send to your database 
-        fetch('https://dry-forest-86287.herokuapp.com/orders', {
+        fetch('https://nameless-reef-39581.herokuapp.com/orders', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',

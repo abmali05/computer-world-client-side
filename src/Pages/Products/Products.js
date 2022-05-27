@@ -8,7 +8,7 @@ const Products = () => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        fetch('https://dry-forest-86287.herokuapp.com/products')
+        fetch('https://nameless-reef-39581.herokuapp.com/products')
             .then(res => res.json())
             .then(data => setProducts(data));
         setLoading(false);

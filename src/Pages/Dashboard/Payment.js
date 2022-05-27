@@ -12,7 +12,7 @@ const Payment = () => {
 
     const { id } = useParams();
 
-    const url = `https://dry-forest-86287.herokuapp.com/payment/${id}`;
+    const url = `https://nameless-reef-39581.herokuapp.com/payment/${id}`;
 
     const { data: order, isLoading } = useQuery(['payment', id], () => fetch(url,
         {

@@ -15,7 +15,7 @@ const CheckoutForm = ({ order }) => {
     const { _id, email, name, price } = order;
 
     useEffect(() => {
-        fetch('https://dry-forest-86287.herokuapp.com/create-payment-intent', {
+        fetch('https://nameless-reef-39581.herokuapp.com/create-payment-intent', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json',
@@ -83,7 +83,7 @@ const CheckoutForm = ({ order }) => {
                 transactionId: paymentIntent.id,
                 status: status,
             }
-            fetch(`https://dry-forest-86287.herokuapp.com/order/${_id}`, {
+            fetch(`https://nameless-reef-39581.herokuapp.com/order/${_id}`, {
                 method: 'PATCH',
                 headers: {
                     'content-type': 'application/json',

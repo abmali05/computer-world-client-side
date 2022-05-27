@@ -9,7 +9,7 @@ const ManageProduct = () => {
     const [product, setProduct] = useState([]);
 
 
-    const { data: products, isLoading, refetch } = useQuery('products', () => fetch('https://dry-forest-86287.herokuapp.com/products', {
+    const { data: products, isLoading, refetch } = useQuery('products', () => fetch('https://nameless-reef-39581.herokuapp.com/products', {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('tokenAccess')}`
@@ -25,7 +25,7 @@ const ManageProduct = () => {
     const deleteItem = productId => {
         const confirmDelete = window.confirm("Are you sure to delete?");
         if (confirmDelete) {
-            const url = `https://dry-forest-86287.herokuapp.com/products/${productId}`;
+            const url = `https://nameless-reef-39581.herokuapp.com/products/${productId}`;
             fetch(url, {
                 method: 'DELETE'
             })

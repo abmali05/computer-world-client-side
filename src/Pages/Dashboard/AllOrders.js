@@ -7,7 +7,7 @@ import Loading from '../Shared/Loading/Loading';
 const AllOrders = () => {
 
 
-    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch('https://dry-forest-86287.herokuapp.com/orders', {
+    const { data: orders, isLoading, refetch } = useQuery('orders', () => fetch('https://nameless-reef-39581.herokuapp.com/orders', {
         method: 'GET',
         headers: {
             authorization: `Bearer ${localStorage.getItem('tokenAccess')}`
@@ -26,7 +26,7 @@ const AllOrders = () => {
             status: status,
         }
 
-        fetch(`https://dry-forest-86287.herokuapp.com/order/${_id}`, {
+        fetch(`https://nameless-reef-39581.herokuapp.com/order/${_id}`, {
             method: 'PATCH',
             headers: {
                 'content-type': 'application/json',
@@ -45,7 +45,7 @@ const AllOrders = () => {
     const deleteItem = productId => {
         const confirmDelete = window.confirm("Are you sure to delete?");
         if (confirmDelete) {
-            const url = `https://dry-forest-86287.herokuapp.com/orders/${productId}`;
+            const url = `https://nameless-reef-39581.herokuapp.com/orders/${productId}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -20,7 +20,7 @@ const MyOrders = () => {
     useEffect(() => {
         const email = user.email;
         console.log(email);
-        const url = `https://dry-forest-86287.herokuapp.com/myorder?email=${email}`;
+        const url = `https://nameless-reef-39581.herokuapp.com/myorder?email=${email}`;
         console.log(url);
         fetch(url, {
             method: 'GET',
@@ -54,7 +54,7 @@ const MyOrders = () => {
     const deleteItem = productId => {
         const confirmDelete = window.confirm("Are you sure to delete?");
         if (confirmDelete) {
-            const url = `https://dry-forest-86287.herokuapp.com/orders/${productId}`;
+            const url = `https://nameless-reef-39581.herokuapp.com/orders/${productId}`;
             fetch(url, {
                 method: 'DELETE'
             })

@@ -17,7 +17,7 @@ const AddReview = () => {
             rating: event.target.rating.value,
         }
 
-        fetch('https://dry-forest-86287.herokuapp.com/reviews', {
+        fetch('https://nameless-reef-39581.herokuapp.com/reviews', {
             method: "POST",
             headers: {
                 'content-type': 'application/json'

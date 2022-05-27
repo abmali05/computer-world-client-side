@@ -1,6 +1,6 @@
 # Computer World
 
-Live Site: [https://computer-world-12.web.app/](https://computer-world-12.web.app/).
+Live Site: [https://my-computer-world-7f937.web.app/home](https://my-computer-world-7f937.web.app/home)
 
 * React base website
 * Firebase & JWT

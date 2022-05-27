@@ -28,7 +28,7 @@ const AddReview = () => {
             .then(res => res.json())
             .then(data => data)
         event.target.reset();
-        toast('Product Added Successfully');
+        toast('Review Added Successfully');
 
     }
 

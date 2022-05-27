@@ -29,11 +29,7 @@ const Navbar = () => {
                             user && <li><Link to="/dashboard">Dashboard</Link></li>
                         }
                         <li>{user ? <Link to={"/"} onClick={logout} >Log Out</Link> : <Link to="/login">Login</Link>}</li>
-                        <li>   {
-                            user && <li>{user.displayName}</li>
 
-                        }
-                        </li>
                         <li>   {
                             user && <li>{user.email}</li>
 
